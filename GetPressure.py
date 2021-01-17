@@ -49,7 +49,7 @@ result1 = r.html.find(sel1)
 
 
 
-record = open('record.csv','a')
+record = open('/home/debian/nas_home/git/daily_riun/record.csv','a')
 record.write(','.join(result1[0].text.split())+','+result0[0].text+'\n')
 record.close()
 
